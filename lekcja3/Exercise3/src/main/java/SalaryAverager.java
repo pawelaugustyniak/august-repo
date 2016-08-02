@@ -30,14 +30,16 @@ public class SalaryAverager {
             br = new BufferedReader(new FileReader("src/report.txt"));
 
             while ((sCurrentLine = br. readLine()) != null) {
-//                System.out.println(sCurrentLine);
+
+
                 builder.append(sCurrentLine);
                 builder.append("\n");
 
                 if(sCurrentLine.matches(".*\\d+.*")) {
 
-
-                    Number parsed = parser.parse(sCurrentLine);
+                    String k =  sCurrentLine.substring(sCurrentLine.indexOf(';')+1,sCurrentLine.length()-1);
+                    System.out.println(k);
+                    Number parsed = parser.parse(k);
                     BigDecimal parsedBigDecimal = (BigDecimal) parsed;
                     listaWartosci.add(parsedBigDecimal);
                 }
