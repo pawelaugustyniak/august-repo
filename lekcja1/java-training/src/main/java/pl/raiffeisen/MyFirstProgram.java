@@ -5,9 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.StringJoiner;
 
-/**
- * Created by rb21776 on 2016-07-14.
- */
+
 public class MyFirstProgram {
 
     public static void main(String[] args) {
