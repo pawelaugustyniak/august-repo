@@ -19,7 +19,6 @@ class LinesReader {
         while (scanner.hasNext()) {
             lines.add(scanner.nextLine());
         }
-
         return lines;
     }
 }
