@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class HolidaysList {
+class CsvEditor {
 
-    FileReader fileReader = new FileReader();
+    private FileReader fileReader = new FileReader();
     private static final int DATE_COLUMN_INDEX=0;
 
     List<String> getColumnAt(String filePath, boolean withHeader) {

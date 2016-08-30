@@ -65,7 +65,7 @@ public class DaysToHolidayCalculatorTest {
         long daysToNextHoliday = calculator.getDaysToHoliday(listOfDates, date6);
 
         //then
-        assertEquals(3652,daysToNextHoliday);
+        assertEquals(3652, daysToNextHoliday);
     }
 
 }
